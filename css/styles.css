@@ -1808,6 +1808,7 @@ footer:before {
 }
 .header_new-btns {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .btn2 {
@@ -2161,6 +2162,7 @@ footer:before {
 }
 .projects_btns {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .projects_btn:nth-child(2) {

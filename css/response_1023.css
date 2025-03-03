@@ -180,6 +180,66 @@
     .header_new-btns > * {
         width: calc(100%/2 - 8px);
     }
+    .why_top {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .why_top > * {
+        width: 100%;
+    }
+    .title2 {
+        font-size: 32px;
+    }
+    .calculation_wrap {
+        gap: 16px;
+    }
+    .calculation_wrap > * {
+        width: 100%;
+    }
+    .calculation_text {
+        margin-bottom: 24px;
+    }
+    .view_wrap > * {
+        width: 100%;
+    }
+    .numbers_items {
+        row-gap: 96px;
+    }
+    .numbers_items > * {
+        width: calc(100% / 2 - 15px);
+    }
+    .numbers_btn .btn2 {
+        width: 100%;
+    }
+    .benefits_wrap > * {
+        width: 100%;
+    }
+    .how_items > * {
+        width: calc(100% / 2 - 15px);
+    }
+    .how_item ul li:before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 2px;
+        background: #202020;
+        border-radius: 100px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .how_item ul li {
+        padding-left: 13px;
+    }
+    .projects_wrap > * {
+        width: 100%;
+    }
+    .projects_text {
+        margin-bottom: 24px;
+    }
+    .projects_btns > * {
+        width: calc(100%/2 - 8px);
+    }
 
 
 

@@ -313,6 +313,44 @@
         font-size: 20px;
         line-height: 1.2;
     }
+    .header_new {
+        padding: 40px 0;
+    }
+    .header_new-title {
+        font-size: 38px;
+    }
+    .header_new-title br {
+        display: none;
+    }
+    .header_new-btns > * {
+        width: 100%;
+    }
+    .numbers_title {
+        margin-bottom: 40px;
+    }
+    .numbers_items {
+        row-gap: 56px;
+    }
+    .numbers_items > * {
+        width: 100%;
+    }
+    .benefits_item {
+        padding-left: 56px;
+    }
+    .how_items {
+        gap: 8px;
+    }
+    .how_items > * {
+        width: 100%;
+    }
+    .projects_btns {
+        gap: 8px;
+    }
+    .projects_btns > * {
+        width: 100%;
+    }
+
+
 
 
 
