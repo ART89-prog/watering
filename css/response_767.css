@@ -293,4 +293,29 @@
         bottom:-50px;
     }
 
+
+
+
+
+    .footer-new_wrap {
+        flex-direction: column-reverse;
+    }
+    .footer-new_title {
+        font-size: 24px;
+    }
+    .footer-new_info {
+        margin-top: 24px;
+    }
+    .footer-new_text {
+        margin-bottom: 12px;
+    }
+    .footer-new_phone {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+
+
+
+
 }

@@ -101,6 +101,66 @@ $(() => {
             }
         }
     })
+
+    const swiper4 = new Swiper('.projects .swiper', {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        pagination: {
+            el: '.projects .swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            1023: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            }
+        }
+    })
+
+    const swiper5 = new Swiper('.direction .swiper', {
+        slidesPerView: 3,
+        spaceBetween: 16,
+        allowTouchMove: false,       
+        breakpoints: {
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 16
+            },
+            480: {
+                slidesPerView: 1.5,
+                spaceBetween: 16
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 16,
+                allowTouchMove: true,
+                pagination: {
+                    el: '.direction .swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+            },
+            1023: {
+                slidesPerView: 2,
+                spaceBetween: 16
+            }
+        }
+    })
+
+
     const swiper3 = new Swiper('.reviews .swiper', {
         slidesPerView: 2,
         spaceBetween: 40,
