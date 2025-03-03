@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Расчёт рулонного газона</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calcApp.css?v8" />
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="app__title">Калькулятор рулонного&nbsp;газона</h1>
+        <div class="app__step-info">
+            <h2 class="app__step-title">Пакет услуг</h2>
+            <div class="app__step-pagination">
+                <div class="app__step-bullet app__step-bullet--active"></div>
+                <div class="app__step-bullet"></div>
+                <div class="app__step-bullet"></div>
+                <div class="app__step-bullet"></div>
+                <div class="app__step-bullet"></div>
+                <div class="app__step-bullet"></div>
+                <div class="app__steps-progress">
+                    <div class="app__progress-bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="app__steps">
+            <div class="app__step app__step--0 active" data-title="Пакет услуг">
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="offer-type" value="grass-and-landing">
+                    <picture>
+                        <source srcset="calcImg/step-0-landing.webp">
+                        <img class="app__card-img" src="calcImg/step-0-landing.jpg" alt="Газон с укладкой">
+                    </picture>
+                    <span class="app__card-title">Газон с доставкой и укладкой</span>
+                </label>
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="offer-type" value="grass-and-delivery">
+                    <picture>
+                        <source srcset="calcImg/step-0-landing-delivery.webp">
+                        <img class="app__card-img" src="calcImg/step-0-landing-delivery.jpg" alt="Газон с доставкой">
+                    </picture>
+                    <span class="app__card-title">Газон с доставкой</span>
+                </label>
+            </div>
+            <div class="app__step app__step--1" data-title="Сорт газона">
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="grass-type" value="sport-grass">
+                    <picture>
+                        <source srcset="calcImg/step-1-sport.webp">
+                        <img class="app__card-img" src="calcImg/step-1-sport.jpg" alt="Газон “Спортнивный”">
+                    </picture>
+                    <span class="app__card-title">Газон “Спортивный”</span>
+                </label>
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="grass-type" value="premium">
+                    <picture>
+                        <source srcset="calcImg/step-1-premium.webp">
+                        <img class="app__card-img" src="calcImg/step-1-premium.jpg" alt="Газон “Премиум”">
+                    </picture>
+                    <span class="app__card-title">Газон “Премиум”</span>
+                </label>
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="grass-type" value="elite">
+                    <picture>
+                        <source srcset="calcImg/step-1-elite.webp">
+                        <img class="app__card-img" src="calcImg/step-1-elite.jpg" alt="Газон “Элитный”">
+                    </picture>
+                    <span class="app__card-title">Газон “Элитный”</span>
+                </label>
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="grass-type" value="standard">
+                    <picture>
+                        <source srcset="calcImg/step-1-standard.webp">
+                        <img class="app__card-img" src="calcImg/step-1-standard.jpg" alt="Газон “Стандартный”">
+                    </picture>
+                    <span class="app__card-title">Газон “Стандартный”</span>
+                </label>
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="grass-type" value="universal">
+                    <picture>
+                        <source srcset="calcImg/step-1-universal.webp">
+                        <img class="app__card-img" src="calcImg/step-1-universal.jpg" alt="Газон “Универсальный”">
+                    </picture>
+                    <span class="app__card-title">Газон “Универсальный”</span>
+                </label>
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="grass-type" value="shadow">
+                    <picture>
+                        <source srcset="calcImg/step-1-shadow.webp">
+                        <img class="app__card-img" src="calcImg/step-1-shadow.jpg" alt="Газон “Теневыносливый”">
+                    </picture>
+                    <span class="app__card-title">Газон “Теневыносливый”</span>
+                </label>
+            </div>
+            <div class="app__step app__step--2" data-title="Площадь газона">
+                <label class="app__label">
+                    <span class="app__suggestion">Площадь газона в кв.м.</span>
+                    <input class="app__input" type="number" name="square" value="100">
+                </label>
+            </div>
+            <div class="app__step app__step--3" data-title="Расположение участка">
+                <label class="app__label">
+                    <span class="app__suggestion">Как далеко участок от МКАД</span>
+                    <select class="app__select" name="distance">
+                        <option value="0km">Внутри МКАД</option>
+                        <option value="10km">До 10 км от МКАД</option>
+                        <option value="35km">До 35 км от МКАД</option>
+                        <option value="50km">До 50 км от МКАД</option>
+                        <option value="100km">До 100 км от МКАД</option>
+                    </select>
+                </label>
+                <label class="app__label">
+                    <span class="app__suggestion">Направление</span>
+                    <select class="app__select" name="highway">
+                        <option value="altufevskoe">Алтуфьевское</option>
+                        <option value="varshavskoe">Варшавское</option>
+                        <option value="volokolamskoe">Волоколамское</option>
+                        <option value="gorkovskoe">Горьковское</option>
+                        <option value="dmitrovskoe">Дмитровское</option>
+                        <option value="egorevskoe">Егорьевское</option>
+                        <option value="kievskoe">Киевское</option>
+                        <option value="kaluzhskoe">Калужское</option>
+                        <option value="kashirskoe">Каширское</option>
+                        <option value="leningradskoe">Ленинградское</option>
+                        <option value="minskoe">Минское</option>
+                        <option value="mozhajskoe">Можайское</option>
+                        <option value="novorjazanskoe">Новорязанское</option>
+                        <option value="novorizhskoe">Новорижское</option>
+                        <option value="nosovihinskoe">Носовихинское</option>
+                        <option value="rogachevskoe">Рогачевское</option>
+                        <option value="rublevskoe">Рублевское</option>
+                        <option value="simferopolskoe">Симферопольское</option>
+                        <option value="jentuziastov">Энтузиастов</option>
+                        <option value="shhelkovskoe">Щелковское</option>
+                        <option value="jaroslavskoe">Ярославское</option>
+                    </select>
+                </label>
+            </div>
+            <div class="app__step app__step--4" data-title="В каком состоянии участок">
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="status" value="old-grass">
+                    <picture>
+                        <source srcset="calcImg/step-2-old-grass.webp">
+                        <img class="app__card-img" src="calcImg/step-2-old-grass.jpg" alt="Газон “Старый газон”">
+                    </picture>
+                    <span class="app__card-title">Старый газон или растет сорняк</span>
+                </label>
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="status" value="grass-removed">
+                    <picture>
+                        <source srcset="calcImg/step-2-grass-removed.webp">
+                        <img class="app__card-img" src="calcImg/step-2-grass-removed.jpg" alt="Снят верхний слой почвы">
+                    </picture>
+                    <span class="app__card-title">Снят верхний слой почвы</span>
+                    <span class="app__card-text">Необходим завоз грунта</span>
+                </label>
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="status" value="all-ready">
+                    <picture>
+                        <source srcset="calcImg/step-2-all-ready.webp">
+                        <img class="app__card-img" src="calcImg/step-2-all-ready.jpg" alt="Подготовленное основание">
+                    </picture>
+                    <span class="app__card-title">Подготовленное основание</span>
+                </label>
+                <label class="app__card-label">
+                    <input class="app__hidden-input" type="radio" name="status" value="needed-cultivation">
+                    <picture>
+                        <source srcset="calcImg/step-2-needed-cultivation.webp">
+                        <img class="app__card-img" src="calcImg/step-2-needed-cultivation.jpg" alt="Нужна культивация почвы">
+                    </picture>
+                    <span class="app__card-title">Нужна культивация почвы</span>
+                    <span class="app__card-text">(рыхление, перекопка)</span>
+                </label>
+            </div>
+            <div class="app__step app__step--5" data-title="Доставка с автопогрузчиком">
+                <label class="app__label">
+                    <span class="app__suggestion">Доставка с автопогрузчиком</span>
+                    <select class="app__select" name="autoloader">
+                        <option value="0">Нет</option>
+                        <option value="1">Да</option>
+                    </select>
+                </label>
+            </div>
+            <div class="app__step app__step--6" data-title="Контакты">
+                <form class="app__step-wrapper">
+                    <span class="form__title">Расчёт стоимости готов!</span>
+                    <span class="form__sub-title">Укажите куда
+                        отправить</span>
+                    <label class="app__label app__label--required">
+                        <span class="app__suggestion hide">Ваше имя</span>
+                        <input class="app__input" type="text" name="name" placeholder="Ваше имя" required>
+                    </label>
+                    <label class="app__label app__label--required">
+                        <span class="app__suggestion hide">Почта для отправки расчета</span>
+                        <input class="app__input" type="email" name="email" placeholder="Почта для отправки расчета" required>
+                    </label>
+                    <label class="app__label app__label--required">
+                        <span class="app__suggestion hide">Телефон для связи</span>
+                        <input class="app__input" type="tel" name="phone" placeholder="Телефон для связи" required>
+                    </label>
+                    <button class="app__button app__button--submit">Получить результаты расчета</button>
+                </form>
+                <div class="app__step-image">
+                    <picture>
+                        <source srcset="calcImg/step-5-final.webp">
+                        <img class="app__card-img" src="calcImg/step-5-final.jpg" alt="Готовим расчет">
+                    </picture>
+                </div>
+            </div>
+            <div class="app__step app__step--7" data-title="Результаты расчета">
+                <img src="calcImg/logo.svg" alt="Логотип">
+                <span class="app__final-title">Расчёт успешно отправлен на ваш е-mail</span>
+                <span class="app__final-description">Если письмо не пришло на почту, пожалуйста, проверьте папку "СПАМ"</span>
+                <a href="/" class="app__button app__button--final">На главную</a>
+            </div>
+        </div>
+        <div class="app_nav-buttons">
+            <button class="app__button app__button--prev" disabled>Назад</button>
+            <button class="app__button app__button--next" disabled>Далее</button>
+        </div>
+    </div>
+    <script src="app.js?v8" type="module"></script>
+</body>
+
+</html>

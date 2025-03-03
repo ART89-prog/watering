@@ -1,0 +1,145 @@
+@media (max-width: 479px) {
+
+    :root {
+        --font_size: 16px;
+        --font_size_title: 24px;
+    }
+    .block {
+        padding: 40px 0;
+    }
+    .modal_img {
+        width: 100%;
+        height: auto;
+    }
+    .header_title {
+        font-size: 34px;
+        padding-top: 77px;
+        text-align: center;
+        text-transform: none;
+    }
+    .header_text {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        text-transform: none;
+    }
+    .header_calc {
+        margin-top: 14px;
+    }
+    .header_calc b {
+        font-size: 20px;
+        text-align: center;   
+        text-transform: none;     
+    }
+    .header_btn {
+        width: 100%;
+        height: 36px;
+        font-size: 14px;
+        line-height: 36px;
+        margin: 0 auto;
+        border-radius: 6px;
+        text-transform: none;
+    }
+    .banner_btn {
+        padding: 19px;
+    }
+    .btn {
+        width: 100%;
+        height: 40px;      
+    }
+    header {
+        padding-bottom: 40px;
+    }
+    .product_item-title {
+        font-size: 20px;
+    }
+    .banner_title {
+        font-size: 34px;
+    }
+    .banner_text {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+    .banner_btn {
+        width: 100%;
+        font-size: 18px;
+    }
+    .step_banner-text {
+        font-size: 20px;
+        text-transform: none;
+        margin-bottom: 16px;
+    }
+    .step_banner-btn {
+        font-size: 18px;
+        width: 100%;
+    }
+    .quote_btn {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 24px;
+    }
+    .contacts_info-logo span b,
+    .contacts_info-text,
+    .contacts_info-phone,
+    .contacts_info-logo,
+    .contacts_info-graffik,
+    .contacts_info-text {
+        font-size: 17px;
+    }
+    .callback_title {
+        font-size: 24px;
+    }
+    .callback button {
+        font-size: 23px;
+        height: 68px;
+        line-height: 68px;
+    }
+    .callback_text {
+        font-size: 16px;
+    }
+    .contacts .map_wrap {
+        height: 420px;        
+    }
+    .step_item-title {
+        font-size: 24px;
+        font-weight: 900;
+    }
+    .quote {
+        padding: 34px 32px;
+        font-size: 16px;
+    }
+    .quote p {
+        margin-bottom: 10px;
+    }
+    .watery_wrap {
+        gap: 24px;
+    }
+    .footer_menu ul li {
+        font-size: 20px;
+    }
+    .footer_info {
+        margin-top: 30px;
+        margin-left: 11px;
+    }
+    .footer_email {
+        font-size: 20px;
+    }
+    .contacts_info-text {
+        margin-top: 30px;
+    }
+    .reviews_item-text {
+        font-size: 20px;
+    }
+    .reviews_item-quote{
+        display: none;
+    }
+
+    .checkbox label{
+        line-height: 15px;
+    }
+
+
+
+
+   
+}
