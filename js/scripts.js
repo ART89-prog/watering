@@ -102,36 +102,50 @@ $(() => {
         }
     })
 
-    const swiper4 = new Swiper('.projects .swiper', {
-        slidesPerView: 2.1,
-        spaceBetween: 24,
-        pagination: {
-            el: '.projects .swiper-pagination',
-            type: 'bullets',
-            clickable: true,
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
+    
+    
+    const projectsSliders = [],
+    projects = document.querySelectorAll('.projects .swiper')
+
+    projects.forEach(function (el, i) {
+        el.classList.add('projects_s' + i)
+
+        let options = {
+            slidesPerView: 2.2,
+            loop: true,
+            speed: 500,
+            watchSlidesProgress: true,
+            slideActiveClass: 'active',
+            slideVisibleClass: 'visible',
+            preloadImages: false,
+            breakpoints: {
+                0: {
+                    spaceBetween: 20,
+                    slidesPerView: 1.12
+                },
+                768: {
+                    spaceBetween: 24,
+                    slidesPerView: 2.2
+                }
             },
-            480: {
-                slidesPerView: 1,
-                spaceBetween: 20
+            pagination: {
+                el: '.projects .swiper-pagination',
+                type: 'bullets',
+                clickable: true
             },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            1023: {
-                slidesPerView: 2.1,
-                spaceBetween: 24
+            navigation: {
+                nextEl: '.projects .swiper-button-next',
+                prevEl: '.projects .swiper-button-prev'
             }
         }
+
+        projectsSliders.push(new Swiper('.projects_s' + i, options))
     })
 
+
+
     const swiper5 = new Swiper('.direction .swiper', {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30,
         allowTouchMove: false,       
         breakpoints: {

@@ -2150,16 +2150,85 @@ footer:before {
     margin-bottom: 56px;
 }
 
+
+
 .projects .swiper {
-   overflow: visible;
+    overflow: visible !important;
 }
-.projects .swiper-wrapper { 
-    width: calc(100vw - (100vw - 618px) / 2);
-    overflow: hidden;
+.projects .swiper-slide.visible {
+    display: flex;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
 }
-.projects .swiper-slide-prev {
+.projects .swiper-slide.active {
+    display: flex;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+.projects .swiper-slide {
+    position: relative;
+    display: flex;
+    visibility: hidden;
+    width: auto;
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
     opacity: 0;
+    align-items: center;
+    justify-content: center;
 }
+.projects .swiper-button-next, 
+.projects .swiper-button-prev {
+    background: none;
+}
+.projects .swiper-horizontal > .swiper-pagination-bullets, 
+.projects .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.projects .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -52px;
+    left: calc(50% - 215px);    
+}
+.projects .swiper-pagination-bullet {
+    display: block;
+    width: 8px;
+    height: 8px;
+    transition: .2slinear;
+    pointer-events: auto;
+    opacity: 1;
+    border: none;
+    border-radius: 50%;
+    background: #ccc;
+}
+.projects .swiper-pagination-bullet-active {
+    background: #266A26;
+}
+.projects .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 8px !important;
+}
+.projects .swiper-pagination-bullet:hover {
+    border-color: none;
+    background: #266A26;
+}
+.projects .swiper-button-next {
+    left: 63px;
+    margin: 0;
+    top: calc(100% + 24px);
+}
+.projects .swiper-button-prev {
+    left: 0px;
+    margin: 0;
+    top: calc(100% + 24px);
+}
+
+
+
+
 .projects_btns {
     display: flex;
     flex-wrap: wrap;
