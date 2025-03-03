@@ -147,6 +147,22 @@
     }
 
 
+
+
+
+
+    .runningline marquee:nth-child(1) {
+        font-size: 56px;
+    }
+    .runningline marquee:nth-child(2) {
+        font-size: 56px;
+    }
+    .view_wrap {
+        gap: 30px;
+    }
+    .view_wrap > * {
+        width: calc(100% / 2 - 15px);
+    }
    
 
 

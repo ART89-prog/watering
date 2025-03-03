@@ -103,8 +103,8 @@ $(() => {
     })
 
     const swiper4 = new Swiper('.projects .swiper', {
-        slidesPerView: 3,
-        spaceBetween: 40,
+        slidesPerView: 2.1,
+        spaceBetween: 24,
         pagination: {
             el: '.projects .swiper-pagination',
             type: 'bullets',
@@ -124,15 +124,15 @@ $(() => {
                 spaceBetween: 20
             },
             1023: {
-                slidesPerView: 3,
-                spaceBetween: 40
+                slidesPerView: 2.1,
+                spaceBetween: 24
             }
         }
     })
 
     const swiper5 = new Swiper('.direction .swiper', {
         slidesPerView: 3,
-        spaceBetween: 16,
+        spaceBetween: 30,
         allowTouchMove: false,       
         breakpoints: {
             320: {
@@ -155,7 +155,7 @@ $(() => {
             },
             1023: {
                 slidesPerView: 2,
-                spaceBetween: 16
+                spaceBetween: 30
             }
         }
     })
