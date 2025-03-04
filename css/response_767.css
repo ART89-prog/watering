@@ -349,6 +349,16 @@
     .projects_btns > * {
         width: 100%;
     }
+    .direction .swiper-button-next,
+    .direction .swiper-button-prev {
+        display: block;
+    }
+    .direction .swiper-horizontal > .swiper-pagination-bullets, 
+    .direction .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .direction .swiper-pagination-custom, 
+    .direction .swiper-pagination-fraction {
+        display: flex;
+    }
 
 
 

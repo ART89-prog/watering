@@ -167,4 +167,15 @@
 
 
 
+
+    .projects_wrap > * {
+        width: 100%;
+    }
+    .projects .swiper-horizontal > .swiper-pagination-bullets, 
+    .projects .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .projects .swiper-pagination-custom, .swiper-pagination-fraction {
+        left: calc(50% - 50px);
+    }
+
+
 }

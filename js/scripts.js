@@ -143,35 +143,71 @@ $(() => {
     })
 
 
+    const directionSliders = [],
+    direction = document.querySelectorAll('.direction .swiper')
 
-    const swiper5 = new Swiper('.direction .swiper', {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        allowTouchMove: false,       
-        breakpoints: {
-            320: {
-                slidesPerView: 1.5,
-                spaceBetween: 16
-            },
-            480: {
-                slidesPerView: 1.5,
-                spaceBetween: 16
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 16,
-                allowTouchMove: true,
-                pagination: {
-                    el: '.direction .swiper-pagination',
-                    type: 'bullets',
-                    clickable: true,
+    direction.forEach(function (el, i) {
+        el.classList.add('direction_s' + i)
+
+        let options = {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            allowTouchMove: false, 
+            loop: true,
+            speed: 500,
+            watchSlidesProgress: true,
+            slideActiveClass: 'active',
+            slideVisibleClass: 'visible',
+            preloadImages: false,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 16,
+                    pagination: {
+                        el: '.direction .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.direction .swiper-button-next',
+                        prevEl: '.direction .swiper-button-prev'
+                    },
                 },
-            },
-            1023: {
-                slidesPerView: 2,
-                spaceBetween: 30
+                479: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 16,
+                    pagination: {
+                        el: '.direction .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.direction .swiper-button-next',
+                        prevEl: '.direction .swiper-button-prev'
+                    },
+                },
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+                    allowTouchMove: true,
+                    pagination: {
+                        el: '.direction .swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.direction .swiper-button-next',
+                        prevEl: '.direction .swiper-button-prev'
+                    },
+                },
+                1023: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                }
             }
         }
+
+        directionSliders.push(new Swiper('.direction_s' + i, options))
     })
 
 

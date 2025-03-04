@@ -2267,6 +2267,7 @@ footer:before {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 .direction_item:nth-child(1) {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(../images/direction1.png);
@@ -2298,6 +2299,87 @@ footer:before {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+
+.direction .swiper {
+    overflow: visible !important;
+}
+.direction .swiper-slide.visible {
+    display: flex;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+.direction .swiper-slide.active {
+    display: flex;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+.direction .swiper-slide {
+    position: relative;
+    display: flex;
+    visibility: hidden;
+    width: auto;
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+}
+.direction .swiper-button-next, 
+.direction .swiper-button-prev {
+    background: none;
+}
+.direction .swiper-horizontal > .swiper-pagination-bullets, 
+.direction .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.direction .swiper-pagination-custom, 
+.direction .swiper-pagination-fraction {
+    bottom: -52px;
+    left: calc(50% - 40px);  
+    display: none;  
+}
+.direction .swiper-pagination-bullet {
+    display: block;
+    width: 8px;
+    height: 8px;
+    transition: .2slinear;
+    pointer-events: auto;
+    opacity: 1;
+    border: none;
+    border-radius: 50%;
+    background: #ccc;
+}
+.direction .swiper-pagination-bullet-active {
+    background: #266A26;
+}
+.direction .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 8px !important;
+}
+.direction .swiper-pagination-bullet:hover {
+    border-color: none;
+    background: #266A26;
+}
+.direction .swiper-button-next {
+    left: 63px;
+    margin: 0;
+    top: calc(100% + 24px);
+}
+.direction .swiper-button-prev {
+    left: 0px;
+    margin: 0;
+    top: calc(100% + 24px);
+}
+.direction .swiper-button-next,
+.direction .swiper-button-prev {
+    display: none;
 }
 
 
