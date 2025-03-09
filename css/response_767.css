@@ -364,6 +364,16 @@
 
 
 
+    .header_new .menu.show {
+        top: 74px;
+    }
+    .header_new .header_top {
+        padding: 20px 30px 20px 0;
+    }
+
+
+
+
 
 
 }

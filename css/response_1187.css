@@ -178,4 +178,99 @@
     }
 
 
+
+
+
+
+
+    .header_new .mob_menu_btn {
+        display: flex;
+        order: 1;
+    }
+    .header_new .menu {
+        position: fixed;
+        z-index: 107;
+        top: 115px;
+        left: 0;
+        display: flex;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 30px 20px;
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+        background: #2A292F;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .header_new .menu.show {
+        transform: translateX(0);
+    }
+    .header_new .close_btn {
+        display: flex;
+    }
+    .menu_open .header_new .mob_menu_btn {
+        display: none;
+    }
+    .header_new .menu .item {
+        width: 100%;
+        margin-right: 0;
+    }
+    .header_new .menu .item + .item {
+        margin-left: 0;
+    }
+    .header_new .menu .item > a {
+        display: block;
+        height: auto;
+        padding-bottom: 15px;
+        text-align: center;
+        color: #fff;
+        border-bottom: none;
+    }  
+    .menu_open .header_new {
+        background: #2A292F;
+    }
+    .header_new .close_btn {
+        display: none;
+    }
+    .menu_open .header_new .close_btn {
+        display: block;
+        top: 8px;
+        right: 30px;
+    }
+    .header_new .header_contacts-mob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .header_new .header_contacts {
+        display: none;
+    }
+    .header_new .menu .item {
+        margin-right: 0px;
+    }
+    .header_new .header_contacts-phone {
+        margin-top: 15px;
+    }
+    .header_new .header_contacts-email {
+        margin-top: 15px;
+    }
+    .header_new .header_bottom {
+        padding-top: 120px;
+    }
+    .header_new .header_top {
+        padding: 37px 40px 37px 0;
+    }
+
+
+
+
+
 }
